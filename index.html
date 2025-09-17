@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js"></script>
+  <title>Chat App</title>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+  <div>
+    <input type="text" name="message" id="msg" placeholder="typing..." required>
+    <button id="send">
+      Send <span class="material-symbols-outlined">chevron_right</span>
+    </button>
+
+    <div id="chat"></div>
+  </div>
+
+  <script type="module">
+    
+    import {firebaseConfig} from './config.js';
+    import {getMsg} from './functions.js';
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    // Get button
+    const bhejo = document.getElementById('send');
+
+    bhejo.addEventListener("click", async () => {
+      const message = document.getElementById('msg').value.trim();
+
+      if (message === "") {
+        console.log("Message is empty, not sending.");
+        return;
+      }
+
+      try {
+        console.log("Inside the sending function");
+        const result = await db.collection('jh-chat').add({ message });
+
+        console.log(`Message sent! Document ID: ${result.id}`);
+
+        // Clear input after sending
+        document.getElementById("msg").value = '';
+      } catch (e) {
+        console.log(`Error while sending message! ${e}`);
+      }
+    });
+
+
+    getMsg();
+  </script>
+</body>
+
+</html>
