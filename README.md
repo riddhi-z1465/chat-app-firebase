@@ -64,23 +64,13 @@ Open `index.html` in your browser.
 
 ## 🌐 Live Demo
 
-Enable **GitHub Pages** in repo settings to deploy your chat app online:
-👉 [https://your-username.github.io/chat-ui-firebase](https://your-username.github.io/chat-ui-firebase)
-
+👉 https://riddhi-z1465.github.io/chat-app-firebase/
 ---
 
 ## 📸 Preview
 
-*(Add screenshots or GIFs of your chat UI here)*
+<img width="1470" height="807" alt="Screenshot 2025-09-27 at 4 29 13 PM" src="https://github.com/user-attachments/assets/18939704-569b-4aa1-b506-8d522338c525" />
 
----
 
-## 🤝 Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
----
-
-## 📜 License
-
-This project is open source under the **MIT License**.
