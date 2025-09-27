@@ -15,7 +15,11 @@ This project demonstrates how to create a real-time chat application with a beau
 * 🖥️ chat edit and delete option
 
 ---
+## 📸 Preview
 
+<img width="1470" height="807" alt="Screenshot 2025-09-27 at 4 29 13 PM" src="https://github.com/user-attachments/assets/18939704-569b-4aa1-b506-8d522338c525" />
+
+---
 ## 📂 Project Structure
 
 ```
@@ -65,11 +69,8 @@ Open `index.html` in your browser.
 ## 🌐 Live Demo
 
 👉 https://riddhi-z1465.github.io/chat-app-firebase/
+
 ---
-
-## 📸 Preview
-
-<img width="1470" height="807" alt="Screenshot 2025-09-27 at 4 29 13 PM" src="https://github.com/user-attachments/assets/18939704-569b-4aa1-b506-8d522338c525" />
 
 
 
