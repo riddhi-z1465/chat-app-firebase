@@ -34,8 +34,8 @@ chat-app-firebase/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/chat-ui-firebase.git
-cd chat-ui-firebase
+git clone https://github.com/riddhi-z1465/chat-app-firebase.git
+cd chat-app-firebase
 ```
 
 ### 2. Firebase Setup
